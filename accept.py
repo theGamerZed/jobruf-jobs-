@@ -7,7 +7,7 @@ def accept_cookies(driver, cookie_element):
         try:
             cookie_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, cookie_element)))
             cookie_button.click()
-            print("Cookie clicked")
+            print("Cookie clicked ✅")
             time.sleep(2)  # Wait for popup to close
         except Exception:
             print("No cookie popup found or error clicking it.")
